@@ -1,0 +1,105 @@
+.conversation-list {
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+  }
+  .navbar {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#F0F2F5;
+    padding: 10px;
+  }
+  
+  .conversation-list h2 {
+    margin-bottom: 20px;
+  }
+  .online-status {
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    grid-column: 1/span2;
+ 
+  }
+  
+  .online {
+    background-color: green;
+  }
+  
+  .offline {
+    background-color: red;
+  }
+  .avatar {
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%; 
+    grid-column: 1;
+    grid-row: span 2;
+    
+    overflow: hidden;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: cover;
+  }
+  
+  .contact-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  
+  .conversation-list input {
+    border-radius: 10px;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .conversation-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .conversation-list li {
+    margin-bottom: 10px;
+  }
+  
+  .conversation-list li a {
+    display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0px;
+  grid-template-rows: auto;
+    color: #333;
+    text-decoration: none;
+    background-color:white;
+    
+  }
+  .conversation-list li a:hover{
+    background-color: #F0F2F5;
+  }
+  .conversation-list .contact-name {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+    margin-left: 12px;
+  }
+  
+  .conversation-list .last-message {
+    grid-column: 2;
+    grid-row: 2;
+    color: #777;
+    text-align: initial;
+    padding: 5px;
+  }
+  

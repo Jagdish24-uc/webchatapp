@@ -1,0 +1,114 @@
+{
+  "conversations": [
+    {
+      "id": "1",
+      "contactId": "1",
+      "contactName": "John Doe",
+      "onlineStatus": true,
+      "avatarSource": "https://i.pravatar.cc/150?img=3",
+      "lastMessage": "Hello, how are you?",
+      "messages": [
+        {
+          "sender": "John Doe",
+          "text": "Hello!"
+        },
+        {
+          "sender": "You",
+          "text": "Hi, I'm doing well. How about you?"
+        },
+        {
+          "sender": "John Doe",
+          "text": "I'm good too. Thanks for asking!"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "contactId": "2",
+      "contactName": "Jane Smith",
+      "onlineStatus": true,
+      "avatarSource": "https://i.pravatar.cc/150?img=4",
+      "lastMessage": "Are you free this weekend?",
+      "messages": [
+        {
+          "sender": "Jane Smith",
+          "text": "Hey! Are you free this weekend?"
+        },
+        {
+          "sender": "You",
+          "text": "Yes, I don't have any plans. What's up?"
+        },
+        {
+          "sender": "Jane Smith",
+          "text": "Let's catch up and have coffee!"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "contactId": "3",
+      "contactName": "David Johnson",
+      "onlineStatus": true,
+      "avatarSource": "https://i.pravatar.cc/150?img=8",
+      "lastMessage": "Have you seen the latest movie?",
+      "messages": [
+        {
+          "sender": "David Johnson",
+          "text": "Hey, have you seen the latest movie?"
+        },
+        {
+          "sender": "You",
+          "text": "No, not yet. How was it?"
+        },
+        {
+          "sender": "David Johnson",
+          "text": "It was amazing! We should go watch it together."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "contactId": "4",
+      "contactName": "Emily Brown",
+      "onlineStatus": false,
+      "avatarSource": "https://i.pravatar.cc/150?img=10",
+      "lastMessage": "Hey, long time no see!",
+      "messages": [
+        {
+          "sender": "Emily Brown",
+          "text": "Hey, long time no see!"
+        },
+        {
+          "sender": "You",
+          "text": "Indeed! It's been a while. How have you been?"
+        },
+        {
+          "sender": "Emily Brown",
+          "text": "I've been great. We should catch up soon!"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "contactId": "5",
+      "contactName": "Michael Wilson",
+      "onlineStatus": true,
+      "avatarSource": "https://i.pravatar.cc/150?img=12",
+      "lastMessage": "Do you have any book recommendations?",
+      "messages": [
+        {
+          "sender": "Michael Wilson",
+          "text": "Hey, do you have any book recommendations?"
+        },
+        {
+          "sender": "You",
+          "text": "Sure! What genre are you interested in?"
+        },
+        {
+          "sender": "Michael Wilson",
+          "text": "I enjoy science fiction and fantasy."
+        }
+      ]
+    }
+  ]
+}

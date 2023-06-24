@@ -1,8 +1,28 @@
-.App {
+.app {
   text-align: center;
+  
 }
-
-.App-logo {
+.container{
+  height: 100vh; /* Ensure the container takes up the full viewport height */
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.Conversation {
+  flex: 1; /* Fill the remaining space in the container */
+  /* Other styles for the conversation component */
+}
+.main-content {
+  
+  padding: 20px;
+  /* Add any other main content styles */
+}
+.app-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -13,7 +33,7 @@
   }
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
