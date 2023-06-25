@@ -14,3 +14,23 @@ Install the dependencies: npm install
 ## Usage
 Start the development server: npm start
 Open your browser and visit: http://localhost:3000
+## Folder Structure
+The project structure is organized as follows:
+- src/
+  - components/
+    - Conversation.js
+    - ConversationList.js
+    - Alert.js
+    - Popup.js
+    - Sidebar.js
+  - data/
+    - dummyData.json
+  - styles/
+    - App.css
+    - Conversation.css
+    - ConversationList.css
+    - Alert.css
+    - Popup.css
+    - Sidebar.css
+  - App.js
+  - index.js
