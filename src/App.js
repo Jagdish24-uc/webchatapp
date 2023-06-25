@@ -11,9 +11,7 @@ import './App.css';
 
 function App() {
   const [conversations, setConversations] = useState([]);
-  //const [contacts, setContacts] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
-  
   const [selectedContact, setSelectedContact] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [alert, setAlert] = useState(null);
@@ -21,29 +19,25 @@ function App() {
   useEffect(() => {
     // Simulate loading data from dummyData.json
     setConversations(dummyData.conversations);
-    //setContacts(dummyData.contacts);
   }, []);
 
+  // Function to handle search input change
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
   };
-
+// Function to open the popup for creating a conversation
   const handleCreateConversation = () => {
     setShowPopup(true);
   };
-
+// Function to handle contact selection
   const handleContactSelection = (contact) => {
-    //console.log(conversations);
-    
     const existingConversation = conversations.find(
       (conversation) => conversation.id === contact.id
-      
     );
     //console.log(existingConversation);
     if (existingConversation) {
       // Open existing conversation
       setSelectedContact(existingConversation.id);
-      //console.log(selectedContact);
   
     } else {
       // Start new conversation
@@ -61,12 +55,11 @@ function App() {
     setShowPopup(false);
     
   };
-
+// Function to handle sending a message
   const handleSendMessage = (message,id) => {
     if (message.trim() !== '') {
       const updatedConversations = conversations.map((conversation) => {
         if (conversation.contactId === selectedContact || conversation.contactId ===id) {
-          
           return {
             ...conversation,
             lastMessage: message,
@@ -86,13 +79,11 @@ function App() {
       Alert('Please enter a message.');
     }
   };
-  
-  
-
+  // Function to close the popup
   const handleClosePopup = () => {
     setShowPopup(false);
   };
-
+// Function to dismiss the alert message
   const handleAlertDismiss = () => {
     setAlert(null);
   };
@@ -118,7 +109,7 @@ function App() {
                 onSearch={handleSearch}
               />
             }
-          />
+          />  {/* Render ConversationList component */}
           
         <Route
             path="/conversation/:id"
@@ -130,9 +121,7 @@ function App() {
                 onAlert={setAlert}
               />
             }
-          />
-          
-          
+          />{/* Render Conversation component */}
           
         </Routes>
         {showPopup && (
@@ -144,7 +133,7 @@ function App() {
           onContactSelect={handleContactSelection}
           onClose={handleClosePopup}
         />
-        )}
+        )} {/* Render Popup component */}
         {alert && <Alert message={alert} onDismiss={handleAlertDismiss} />}
       </div>
     </Router>
