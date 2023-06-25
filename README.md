@@ -8,9 +8,9 @@ Create new conversations
 Send messages within a conversation
 Display online/offline status of contacts
 ## Installation
-Clone the repository: git clone <repository-url>
-Navigate to the project directory: cd web-chat-application
-Install the dependencies: npm install
+-Clone the repository: git clone <repository-url>
+-Navigate to the project directory: cd web-chat-application
+-Install the dependencies: npm install
 ## Usage
 Start the development server: npm start
 Open your browser and visit: http://localhost:3000
