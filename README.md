@@ -8,9 +8,9 @@ Create new conversations
 Send messages within a conversation
 Display online/offline status of contacts
 ## Installation
--Clone the repository: git clone <repository-url>
--Navigate to the project directory: cd web-chat-application
--Install the dependencies: npm install
+1. Clone the repository: git clone <repository-url>
+2. Navigate to the project directory: cd web-chat-application
+3. Install the dependencies: npm install
 ## Usage
 Start the development server: npm start
 Open your browser and visit: http://localhost:3000
@@ -34,3 +34,12 @@ The project structure is organized as follows:
     - Sidebar.css
   - App.js
   - index.js
+## Key Features
+
+Let's take a look at some of the key features our web chat application offers:
+  1. View a list of conversations: Users can easily navigate and access their conversations in one place.
+  2. Search conversations by contact name: Finding specific conversations is made simple with the search functionality.
+  3. Create new conversations: Users can initiate new conversations and add contacts to start communicating.
+  4. Send messages within a conversation: Real-time messaging allows for seamless and instant communication.
+  5. Display online/offline status: Users can quickly identify the availability of their contacts.
+#### These features work together to provide a smooth and intuitive chat experience.
