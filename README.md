@@ -40,3 +40,6 @@ The project structure is organized as follows:
   - index.js
 ## Preview
 ![webchatapplication](https://github.com/Jagdish24-uc/webchatapp/assets/71270068/39ec955f-72c9-4ae1-9162-7ae45b9c0401)
+
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please create a new issue or submit a pull request.
